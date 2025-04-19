@@ -63,7 +63,14 @@ HashMap * createMap(long capacity) {
 }
 
 void eraseMap(HashMap * map,  char * key) { 
-    if(map == NULL || key == NULL) return;   
+    if(map == NULL || key == NULL) return;  
+    
+    for (size_t i = 0; i < map->current; i++)
+    {
+        if (map->buckets[i] == NULL)
+            return;
+    }
+    
 
 
 }

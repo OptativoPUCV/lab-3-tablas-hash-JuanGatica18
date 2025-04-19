@@ -91,7 +91,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 
     for (size_t k = poscision; k < map->capacity;k++)
     {
-        size_t pos = pos % map->capacity;
+        size_t pos = k % map->capacity;
         if (map->buckets[pos] == NULL)
         {
             return NULL;
@@ -99,7 +99,7 @@ Pair * searchMap(HashMap * map,  char * key) {
         else
         {
             map->current = pos;
-            return map->buckets;
+            return map->buckets[pos];
         }
         
     }

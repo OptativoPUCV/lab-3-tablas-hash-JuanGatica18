@@ -65,3 +65,15 @@ hashmap.c:94:16: error: 'pos' may be used uninitialized in this function [-Werro
                 ^~~
 cc1.exe: all warnings being treated as errors
 e796dd0
+vi., 18 de abr. de 2025 23:33:32: 
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:102:23: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+             return map->buckets;
+                    ~~~^~~~~~~~~
+hashmap.c:94:16: error: 'pos' may be used uninitialized in this function [-Werror=maybe-uninitialized]
+         size_t pos = pos % map->capacity;
+                ^~~
+cc1.exe: all warnings being treated as errors
+e9c88a1

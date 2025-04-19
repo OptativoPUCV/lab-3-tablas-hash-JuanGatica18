@@ -142,3 +142,9 @@ sá., 19 de abr. de 2025  0:02:40:
  1 file changed, 17 insertions(+)
  tests:  0|0
 87c13e1
+sá., 19 de abr. de 2025  0:11:02: 
+ hashmap.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+ tests:  17|0
+total_score: 70/70
+172c57b
